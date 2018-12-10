@@ -3,6 +3,7 @@ package demo1;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -19,7 +20,8 @@ public class Program1 {
 		showEle.click();
 		
 		//RowCount
-		WebElement rows = driver.findElement(By.xpath(""));
+		WebElement rows = driver.findElement(By.xpath("//table[@id='example']/tbody/tr"));
+		//int rowCount = rows.getSize();
 		
 		
 		//WebElement nameEle = driver.findElements(By.xpath(""));
